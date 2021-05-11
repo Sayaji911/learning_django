@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+          rel="stylesheet"/>
+
+    <title>Django Course</title>
+</head>
+<body>
+<section class="py-10">
+    <h1 class="text-center text-3xl"> Programming  Books </h1>
+    <div class="grid grid-cols-4 gap-4" >
+        {% for book in books  %}
+            <div class="justify-self-center">
+                <p> {{ book.title }} </p>
+                <img src="{{ book.thumbnailUrl }}" width="200"/>
+            </div>
+                {% endfor %}
+
+            </div>
+
+</section>
+</body>
+</html>
