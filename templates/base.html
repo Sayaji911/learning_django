@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
+          rel="stylesheet"/>
+
+
+    <title>
+        {%  block title %}
+            Django Course
+        {% endblock %}
+    </title>
+
+
+</head>
+<body>
+<section class="py-10 flex justify-center">
+    {% block content %}
+
+
+    {% endblock %}
+
+
+
+</section>
+</body>
+</html>
